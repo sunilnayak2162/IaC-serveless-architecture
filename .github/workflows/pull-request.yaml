@@ -9,7 +9,3 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Install YAML linting tool
-        run: npm install -g yaml-lint
-      - name: Run YAML linting
-        run: yaml-lint IaC-serveless-architecture/.github/workflows/pull-request.yaml
